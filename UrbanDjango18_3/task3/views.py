@@ -8,7 +8,6 @@ def index(request):
         'index': reverse('index')
     }
     return render(request, 'third_task/index.html', context=context)
-        
 
 
 def page1(request):
@@ -24,4 +23,7 @@ def page1(request):
 
 
 def page2(request):
-    return render(request, 'third_task/page2.html')
+    context = {
+        'index': reverse('index')
+    }
+    return render(request, 'third_task/page2.html', context=context)

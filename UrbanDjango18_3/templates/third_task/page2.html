@@ -15,15 +15,8 @@
 
 <body>
     <h1>Заказы</h1>
-    <nav>
-        <ul>
-            <li><a href="{% url 'index' %}">Главная</a></li>
-            <li><a href="{% url 'page1' %}">Магазин</a></li>
-            <li><a href="{% url 'page2' %}">Заказы</a></li>
-        </ul>
-    </nav>
-
     <p class="no-orders-message">У вас нет заказов</p>
+    <button onclick="window.location.href='{{ index }}'">На главную</button>
 </body>
 
 </html>
