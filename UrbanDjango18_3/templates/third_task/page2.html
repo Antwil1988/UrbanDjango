@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы</title>
+    <style>
+        .no-orders-message {
+            font-size: 24px; /* Увеличивает размер шрифта */
+            font-weight: bold; /* Делает шрифт жирным */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Заказы</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Главная</a></li>
+            <li><a href="{% url 'page1' %}">Магазин</a></li>
+            <li><a href="{% url 'page2' %}">Заказы</a></li>
+        </ul>
+    </nav>
+
+    <p class="no-orders-message">У вас нет заказов</p>
+</body>
+
+</html>
